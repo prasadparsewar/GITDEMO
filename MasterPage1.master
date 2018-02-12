@@ -1,0 +1,89 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage1.master.cs" Inherits="MasterPage1" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>MARRIAGE PROFILE MAKER</title>
+    <link rel="stylesheet" type="text/css" href="StyleSheet.css" />
+
+    <style type="text/css">
+        .auto-style1 {
+            font-weight: normal;
+            font-size: xx-large;
+
+          
+        }
+
+         #Image1 {
+             margin-right:950px;
+
+                  }
+
+         
+    </style>
+
+</head>
+<body>
+    <form id="form1" runat="server">
+ 
+<div id="container" style="background-attachment:fixed; top: -2px; left: -20px;">
+		<div id="header">
+            <asp:Image ID="Image1" runat="server"  Height="86px" Width="112px" ImageUrl="~/images/images.jpg" />
+        	<h1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; MARRIAGE<span class="off">PROFILE MAKER</span></h1>
+			&nbsp;&nbsp;
+			
+		  <h2>  <asp:Image ID="Image2" runat="server" Height="86px" Width="112px" ImageUrl="~/images/images.jpg" /></h2>
+        </div>   
+        
+        <div id="menu">
+        	<ul>
+            	
+                <li class="menuitem"><asp:HyperLink ID="HyperLink2" runat="server"  NavigateUrl="contact.aspx">CONTACT</asp:HyperLink></li>
+				<li class="menuitem"><asp:HyperLink ID="HyperLink3" runat="server"  NavigateUrl="aboutus.aspx">ABOUT US</asp:HyperLink></li>
+                <li class="menuitem"><asp:HyperLink ID="HyperLink4" runat="server"  NavigateUrl="Registration.aspx">REGISTRATION</asp:HyperLink></li>
+                <li class="menuitem"><asp:HyperLink ID="HyperLink5" runat="server"  NavigateUrl="login.aspx">LOGIN</asp:HyperLink></li>
+
+            </ul>
+        </div>
+    
+        
+        <div id="leftmenu">
+
+        <div id="leftmenu_top"></div>
+
+				<div id="leftmenu_main">    
+                
+                <h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span class="auto-style1">&nbsp;Main</span></h3>
+                        
+                <ul>
+                   
+                    <li class="menuitem"><asp:HyperLink ID="HyperLink6" runat="server"  NavigateUrl="Events.aspx">EVENTS</asp:HyperLink></li>
+            	    <li class="menuitem"><asp:HyperLink ID="HyperLink7" runat="server"  NavigateUrl="Exe Committe.aspx">EXE COMMITTEE</asp:HyperLink></li>
+					<li class="menuitem"><asp:HyperLink ID="HyperLink8" runat="server"  NavigateUrl="Contact List.aspx">Contact List</asp:HyperLink></li>
+                    <li class="menuitem"><asp:HyperLink ID="HyperLink9" runat="server"  NavigateUrl="Hotel List.aspx">HOTELS LIST</asp:HyperLink></li>
+					<li class="menuitem"><asp:HyperLink ID="HyperLink10" runat="server"  NavigateUrl="Direction Map.aspx">DIRECTION MAP</asp:HyperLink></li>
+                  
+               </ul>
+</div>
+                
+                
+              <div id="leftmenu_bottom"></div>
+        </div>
+     <div id="content" >        
+        <div id="content_top"></div>
+        <div id="content_main">
+             <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+                        </asp:ContentPlaceHolder>
+
+        </div>
+        <div id="content_bottom"></div>
+      </div>
+     <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                        </asp:ContentPlaceHolder>
+               
+   </div>
+       
+    </form>
+</body>
+</html>
